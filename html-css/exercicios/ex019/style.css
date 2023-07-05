@@ -1,0 +1,47 @@
+
+body{
+    background-color: #000B0D;
+    font-family:Arial, Helvetica, sans-serif; 
+   
+}
+/*  em HTML é Id= em CSS e # 
+    Em HTML é class= em CSS é .
+*/
+h1{
+color: #154B52
+
+}
+h1#principal{
+    text-align: center;
+    background-color: #154b52;
+    color: #042940;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px
+
+}
+h2{
+    color:#D9BFA9 ;
+}
+
+p{
+    color: #1C8394;
+}
+
+.basico{
+    color: green;
+    font-weight: bolder;
+
+}
+
+.intermediario{
+color: yellow;
+}
+
+.avançado{
+color: red;
+}
+
+.destaque{
+    background-color: #265c4b81;
+}
