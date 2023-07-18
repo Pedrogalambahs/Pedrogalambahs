@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 0px;
+            margin: 0px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Confirmação de Nacionalidade</h1>
+        <p>Listagem-Aprovação: <input type="text" name="txtvel" id="txtvel" onkeydown="verificarTecla(event)">
+            <input type="button" value="Verificar" onclick="calcular()">
+        </p>
+        <div id="res"></div>
+    </header>
+    
+    <script>
+        function verificarTecla(event) {
+            if (event.key === 'Enter') {
+                calcular();
+                event.preventDefault(); // Impede o comportamento padrão do Enter (enviar o formulário)
+            }
+        }
+    
+        function calcular() {
+            var txtv = document.querySelector(`input#txtvel`);
+            var res = document.querySelector(`div#res`);
+            var país = txtv.value;
+    
+            if (país == 'Brasil') {
+                res.innerHTML = 'Você é Brasileiro!';
+            } else {
+                res.innerHTML = 'Você é Estrangeiro!';
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
